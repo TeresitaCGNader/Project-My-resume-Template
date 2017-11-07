@@ -1,0 +1,643 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+/*==================================== MOBILE styles =================*/ 
+body {      
+  font-family: 'Merriweather', 'Times New Roman',serif;
+  font-weight: 400;
+  font-size:1em;
+  background-image: url(img/pink-flower-320px.jpg);
+  background-repeat:no-repeat; /* Display background graphic only once */
+  background-size: cover; /* Cover the entire body with one large photo */
+  background-attachment: fixed; /* Is fixed while the visitor scrolls */  
+  background-position: top left;
+
+}
+
+/* colors */
+
+/* 
+============================================================================
+https://color.adobe.com/mariposa-monarca-1080px-color-theme-10175331/
+https://color.adobe.com/Copy-of-mariposa-monarca-320px-color-theme-10175405/
+https://color.adobe.com/mariposa-monarca-1080px-color-theme-10175546/
+https://color.adobe.com/Copy-of-mariposa-monarca-1080px-color-theme-10175656/
+============================================================================
+*/
+  .black {background-color:rgba(241,0,84,0.85); color:#F10054;}
+  .softpurple{color:#f1bafa;}
+  .darkpurple{color:#230740; background-color:rgba(35,7,64,0.95);}
+  .white {background-color:rgba(4,1,8,0.85); color:#FFFFFF;}
+.periwinkle {
+  color:#FFFFFF; 
+  color:rgb(255,255,255);
+}
+.periwinkle-bg {
+  background-color:#801AF4; 
+  background-color:rgba(128,26,244,0.85);
+}
+.purple-bg {  
+  background-color:#801AF4; 
+  background-color:rgba(128,26,244,0.85);}
+.purple {color: #801AF4;}
+.green-bg {
+  background-color:#0AB800; 
+  background-color:rgba(10,184,0,0.85);}
+.blue-bg {
+  background-color:#0CBCD9; 
+  background-color:rgba(12,188,217,0.85);}
+.red-bg {
+  background-color:#C91012; 
+  background-color:rgba(201,16,18,0.85);}
+.orange-bg{
+  background-color:#FF7500; 
+  background-color:rgba(255,117,0,0.85);}
+.ocean,
+  a:link.ocean,
+  a:hover.ocean,
+  a:active.ocean,
+  a:visited.ocean {
+    color:#E0D5C8; 
+    color:rgb(224,213,200);
+  }
+  .pink-bg {  
+    background-color:#ecbcbc; 
+    background-color:rgba(236,188,188,0.85);
+}
+
+
+
+/* anchors */
+a {color:#B7C2FA;}
+  a:link {color:#B7C2FA;}
+  a:hover {color:#f1bafa; background-color:rgba(241,0,84,0.85);}
+  a:active {color:#f1bafa;}
+  a:visited {color:#f1bafa;}
+  a {text-decoration:none;}
+  /* a {border-bottom:10px groove #B7C2FA; } */
+#articles a:hover {background-color:rgba(35,7,64,0.95);}
+#share a:hover {color:#C6BCED; background-color:rgba(198,188,237,0.95);}
+#about a{color:#801AF4;}
+
+/* navigation */
+nav {
+      text-align:center;}
+nav ul {
+      padding: 0;
+}
+nav li {list-style-type:none;}
+nav a {
+    background-color:#F10054;
+    color:#000000;
+    display:block; /* display:block; Means that the element is displayed as a block. A block has some whitespace above and below it and tolerates no HTML elements next to it, except when ordered otherwise. */
+    font-size:150%;
+    margin:2%;
+    padding:2%; 
+    text-decoration:none;
+    font-style:normal;
+}
+nav a:hover {
+    background-color:#B7C2FA;
+    color:#B7C2FA;
+    -webkit-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    -ms-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    transition: all .5s linear;
+}
+#about {
+  margin-top:-40px;
+}
+#share a {
+    display:inline;
+    background-color:transparent; 
+    padding: 2%;
+    margin:2%;
+    text-align: center;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+nav i[onclick] {
+  cursor:pointer;
+}
+
+/* page layout blocks */
+main {}
+header {
+  text-align:center;
+  margin:0;
+  padding:0;
+}
+header a img {border:0;}
+header a:hover {background-color:transparent;}
+header p {font-size:10pt; font-size:100%;}
+#firstname, #lastname, #symbol {height:100px; width:auto;}
+#combo {display:none;}
+article {}
+aside {}
+footer {}
+footer ul{}
+
+article, aside, footer {
+   margin:5%; 
+   padding:2%;
+}
+
+article, aside, form, header, section, #share {
+    margin:5%;
+    }
+nav#articles a i:hover {
+  -webkit-transform: scale(3) translateY(-10px);
+     -moz-transform: scale(3) translateY(-10px);
+       -o-transform: scale(3) translateY(-10px);
+      -ms-transform: scale(3) translateY(-10px);
+          transform: scale(3) translateY(-10px);
+}
+/* error */
+errorbox {
+  height: 80px;
+  width: 5px;
+}
+#error h1 {
+  
+}
+#error p {
+  
+}
+
+/* form */
+form {
+    height: 800px;
+    width: 600px;
+    background-color: #801AF4;
+}
+fieldset {
+    width: 35%;
+    height: 35%;
+    float: left;
+    position:relative;
+    margin-top:5%;
+    margin-left:8%;
+}
+legend {
+  position:absolute;
+  left:10px; 
+  top:-20px;
+  white-space:nowrap;
+  margin-bottom:15px;
+  }
+label {
+  display:block;
+  margin-top:5%;
+}
+input {
+  font-family:'Dancing Script', Arial, Sans-Serif;
+  padding:2%;
+}
+textarea {
+  font-family:'Dancing Script', Arial, Sans-Serif;
+  height:100px;
+  padding:2%;
+  width:95%; 
+}
+select {font-family:'Dancing Script', Arial, Sans-Serif;}
+option {}
+label input[type="checkbox"], 
+label input[type="radio"] {
+  display:inline!important; 
+  }
+input:focus, 
+textarea:focus {
+    background-color:#F10054; 
+    outline:white;
+    border:2px solid white;
+}
+input:required,textarea:required,select:required {
+    border:2px solid green; 
+}
+label.required:after {content:" *";}
+
+/* media */
+figure {
+  width:100%; 
+  margin:0;
+  height: 100%;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%
+}
+figcaption {
+  font-size:70%;
+  text-align:center;
+  display:block;
+  margin-bottom:5%;
+}
+img {width:100%; margin:0; padding:0;}
+
+a img {border:0 solid transparent;}
+video, audio, iframe, object, embed {
+   width:100%;  
+   height:320px; 
+}
+
+/* typography */
+p {}
+ol, ul, dl {}
+li {}
+dt {
+     font-style:italic;
+}
+dd {}
+address {
+    font-style:normal;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Dancing Script', 'Times New Roman' , cursive;      
+    font-weight:normal;
+}
+h1 {
+  font-size:350%;
+}
+h2 {
+  font-size:250%;
+}
+h3 {
+  font-size:200%;
+}
+h4 {
+  font-size:150%;
+}
+h5 {
+  font-size:125%;
+}
+h6 {
+  font-size:100%;
+}
+ul, ol {overflow:hidden;}
+nav ul {overflow:initial;}
+
+/* table */
+table {
+    width:100%;
+    border-collapse:collapse;
+}
+caption {}
+thead {}
+tbody {}
+tfoot {display:none;}
+tr {border-bottom:2px solid white;}
+th {padding:1%; border-bottom:2px solid whitesmoke;}
+td {padding:1%;}
+td[colspan] {background-color:#595759;}
+  #skills th:nth-child(1) {text-align:right; width:25%;}
+
+th[role="columnheader"] {cursor:pointer;}
+th[role="columnheader"]:after {
+    content:" ⇳"; 
+} 
+  #skills th[role="columnheader"]:nth-child(3),
+  #skills th[role="columnheader"]:nth-child(4) {
+  cursor:text;
+}
+
+  #skills th[role="columnheader"]:nth-child(3):after,
+  #skills th[role="columnheader"]:nth-child(4):after {
+  content:"";
+}
+td[colspan]:hover {
+    animation: expand 1s 1;
+    }
+    @keyframes expand {
+      0% {
+        transition: 1s linear all;
+        transform: scaleX(.5);
+        transform-origin: left;
+        }
+      100% {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+    }
+
+/* embellishments */
+  .radius {
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+}
+  .radiussmall {
+       -webkit-border-radius: 20%;/*Safari, Chrome*/
+       -moz-border-radius: 20%;/*Firefox*/
+       border-radius: 20%;
+}
+  .radiusnormal{
+         -webkit-border-radius: 5%;/*Safari, Chrome*/
+         -moz-border-radius: 5%;/*Firefox*/
+         border-radius: 5%;
+}
+  .circle {
+     -webkit-border-radius: 50%;
+             border-radius: 50%;
+}
+  .boxshadow {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=124, Color=#000000)";/*IE 8*/
+    -moz-box-shadow: 4px 6px 5px #000000;/*FF 3.5+*/
+    -webkit-box-shadow: 4px 6px 5px #000000;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+    box-shadow: 4px 6px 5px #000000;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+}
+  .boxshadowmark{
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Color=#000000)";/*IE 8*/
+    -moz-box-shadow: 1px 1px 10px 5px #000000;/*FF 3.5+*/
+    -webkit-box-shadow: 1px 1px 10px 5px #000000;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+    box-shadow: 1px 1px 10px 5px #000000;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+}
+  .tshadow {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=12, Direction=135, Color=#000000)";/*IE 8*/
+     text-shadow: 2px 2px 12px #000000;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+} 
+  .gradient {
+    background: linear-gradient(98deg, #801AF4 42%, #0CBCD9 72%, #C91012 67%);
+    background: -moz-radial-gradient(50% 50%, circle contain, #FFFFFF 0, #D6D6D6 100%);/* FF3.6+ */
+    background: -webkit-radial-gradient(50% 50%, circle contain, #FFFFFF 0, #D6D6D6 100%);/* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(50% 50%, circle contain, #FFFFFF 0, #D6D6D6 100%);/* Opera 11.10+ */
+    background: -ms-radial-gradient(50% 50%, circle contain, #FFFFFF 0, #D6D6D6 100%);/* IE10+ */
+}
+  .shape {
+      -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+.drop-shadow {
+   -webkit-filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.25));
+   filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.25));
+}
+.move {
+-webkit-transition: all 1s ease-in-out;
+   -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+     -o-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out;
+}
+
+/* icons */
+  .material-icons {font-feature-settings: 'liga';} /* Support for IE. */
+  .material-icons.md-18 {font-size: 18px;}
+  .material-icons.md-24 {font-size: 24px;}
+  .material-icons.md-36 {font-size: 36px;}
+  .material-icons.md-48 {font-size: 48px;}
+  .material-icons.black {color:#000000;}
+
+  .socicon-wordpress {color: #464646;}
+  .socicon-googleplus {color: #dd4b39;}
+  .socicon-twitter {color: #4da7de;}
+  .socicon-facebook {color: #3e5b98;}
+  .socicon-linkedin {color: #3371b7;}
+  .confirmation {
+      background-color:#F10054;
+      border:2px solid green;
+      color:green;
+      font-size:120%;
+      font-weight:bold;
+      max-width:300px;
+      padding:3%;
+      position:absolute;
+      top:10%;
+      left:20%
+}
+  .tryagain {
+      background-color:#F10054;
+      border:2px solid red;
+      color:red;
+      font-size:120%;
+      font-weight:bold;
+      max-width:300px;
+      padding:3%;
+      position:absolute;
+      top:10%;
+      left:20%
+}
+  .masonry { 
+      line-height: 1;   /* 0 Prevents vertical gaps */
+      -webkit-column-count: 1;
+      -webkit-column-gap:   10px;
+      -moz-column-count:    1;
+      -moz-column-gap:      10px;
+      -ms-column-count:     1;
+      -ms-column-gap:       10px;
+      column-count:         1;
+      column-gap:           10px; 
+}
+  .masonry figure {  
+      -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+                page-break-inside: avoid; /* Firefox */
+                     break-inside: avoid; /* IE 10+ */
+}
+  .masonry img {
+      width: 100%;
+      height: auto;
+}
+.masonry figcaption {
+      display:block;
+      font-size:70%;
+}
+
+@media all and (min-width: 600px) { 
+  /* TABLET ========================ADD DECLARATIONS BETWEEN these curly braces */
+    body{
+      background-image: url(img/pink-flower-640px.jpg);
+      }
+  #firstname, #lastname {height:100px; width:auto;}
+  #symbol {height:100px; width:auto;}
+    /* navigation */
+    nav {}
+    nav ul {}
+    nav li {}
+    nav a {
+        background-color:#B7C2FA;
+        color:#000000;
+        display:block; /* display:block; Means that the element is displayed as a block. A block has some whitespace above and below it and tolerates no HTML elements next to it, except when ordered otherwise. */
+        font-size:130%;
+        margin:3%;
+        padding:3%; 
+        text-decoration:none;  
+    }
+    #about {margin-top:-40px;}
+    #articles li {
+      display:inline-block;
+    }
+    #articles a {
+        min-width:auto; 
+        max-width:220px; 
+        padding:10px;
+    }  
+    #articles a i {display:block;}  
+    fieldset {margin-bottom:3%;}
+    .alignleft   {float:left; margin:0 2% 0 0;}
+    .aligncenter {text-align:center; margin:0 auto;}
+    .alignmiddle {position: absolute; top: 0; left: 0; bottom: 0; right: 0;}
+    .alignright  {float:right; margin:0 0 0 2%;}
+    .clear       {clear:both;}
+    .clearright  {clear:right;}
+    .clearleft   {clear:left;}
+    .fifty  {width:50%;}
+    .thirty {width:30%;}
+
+    footer li{
+      display:inline-block;
+      margin: 0px;
+    }
+    .masonry {
+        -webkit-column-count: 3;
+        -moz-column-count:    3;
+        column-count:         3;
+    }
+}
+
+@media all and (min-width: 1080px) { 
+      /* DESKTOP ======================ADD DECLARATIONS BETWEEN these curly braces */
+    body{
+      background-image: url(img/pink-flower-1080px.jpg);
+      }
+    #firstname {
+      height:auto; 
+      width:99px;
+      } 
+    #lastname {
+      height:auto; 
+      width:293px;
+      }
+    #symbol {
+      height:100px; 
+      width:auto;
+    }  
+    nav a {
+      margin-left: 10px;
+      }
+      #articles a {
+        width:300px; 
+        font-size: 80%;
+    }
+      #about {
+        margin-top:-80px;
+      }
+    legend {
+        top:-35px;
+      }
+  video,  iframe, object, embed {
+    height:400px;
+    width: 100%;
+    }
+    .masonry {
+         -webkit-column-count: 4;
+         -moz-column-count:    4;
+         column-count:         4;
+    }
+    .slidebox figcaption {
+      font-size: 50%!important;
+  }
+  #firstname {
+  -webkit-transform:  scale(1.0) rotate(3deg)  translateX(5px) translateY(-5px);
+     -moz-transform:  scale(1.0) rotate(3deg)  translateX(5px) translateY(-5px);
+       -o-transform:  scale(1.0) rotate(3deg)  translateX(5px) translateY(-5px);
+      -ms-transform:  scale(1.0) rotate(3deg)  translateX(5px) translateY(-5px);
+          transform:  scale(1.0) rotate(3deg)  translateX(5px) translateY(-5px);
+  }
+  #lastname {
+  -webkit-transform:  scale(1.0) rotate(360deg)  translateX(5px) translateY(-5px);
+     -moz-transform:  scale(1.0) rotate(360deg)  translateX(5px) translateY(-5px);
+       -o-transform:  scale(1.0) rotate(360deg)  translateX(5px) translateY(-5px);
+      -ms-transform:  scale(1.0) rotate(360deg)  translateX(5px) translateY(-5px);
+          transform:  scale(1.0) rotate(360deg)  translateX(5px) translateY(-5px);
+  }
+  #symbol {
+  -webkit-transform:  scale(1.0) rotate(3deg)  translateX(5px) translateY(-5px);
+     -moz-transform:  scale(1.0) rotate(3deg)  translateX(5px) translateY(-5px);
+       -o-transform:  scale(1.0) rotate(3deg)  translateX(5px) translateY(-5px);
+      -ms-transform:  scale(1.0) rotate(3deg)  translateX(5px) translateY(-5px);
+          transform:  scale(1.0) rotate(3deg)  translateX(5px) translateY(-5px);
+  }
+  header p {
+  -webkit-transform:  scale(1.0) rotate(3deg)  translateX(5px) translateY(-5px);
+     -moz-transform:  scale(1.0) rotate(3deg)  translateX(5px) translateY(-5px);
+       -o-transform:  scale(1.0) rotate(3deg)  translateX(5px) translateY(-5px);
+      -ms-transform:  scale(1.0) rotate(3deg)  translateX(5px) translateY(-5px);
+          transform:  scale(1.0) rotate(3deg)  translateX(5px) translateY(-5px);
+  }
+form {
+    height: 880px;
+    width: 600px;
+    background-color: #801AF4;
+}
+  
+}
+
+@media print { 
+  /* PRINT ===============================================ADD DECLARATIONS BETWEEN these curly braces */
+    body {font-size:10pt;}
+    #firstname, #lastname, #symbol {display:none;}
+    #combo {
+       display:block; /* or inline */
+       height:1in;   /* some value of inches, like 1 or 1.5 */
+       width:auto;    /* proportional to the height. */
+       margin:0 auto; /* centers the image file */
+    }
+    h1, h2, h3, h4, h5, h6 {margin:20pt 0 0 0; padding:0;}
+
+    h1 {font-size:350%;}
+    h2 {font-size:250%;}
+    h3 {font-size:200%;}
+    h4 {font-size:150%;}
+    h5 {font-size:125%;}
+    h6 {font-size:100%;} 
+    article, aside, header {margin:0; padding:0; border:0;}
+    header p {font-size:10pt; margin-bottom:100%;}
+    nav {display:none;}
+    iframe, video, audio {display:none;}
+    address p {display:inline;}  
+
+    #contact {display:none;}   /* Hide form. */
+    .scroll  {display:none;}   /* Hide link to the form at the bottom. */
+    #about address:after {            
+        display:block; 
+        content:"guzmannt @ oregonstate.edu";
+    }
+    #about a[href]:after {   /* Display web address */
+       display:block;
+       content:  attr(href) "↗  ";
+    }
+    address p i {
+      font-size:8pt!important;
+    }  
+    footer ul a[href]{display:none;}
+    footer li {
+      display:inline-block;
+      margin-right:2%;
+    }
+    tbody, th  {border-bottom:2px solid lightgray;}
+    td[colspan] {
+        border-bottom:2px solid lightgray;
+        border-right:2px solid lightgray;
+    }
+    .alignright {float:right; width:50%; margin-bottom:0;}
+    .alignleft  {float:left;  width:50%; margin-bottom:0;}
+    .clear      {clear:both;}  
+    .boxshadow {box-shadow:none;}
+    .white{color:#000000;}  
+    aside.fifty figure.thirty {width:30%;}
+    img.shape, 
+    img.boxshadow {box-shadow:none;}
+    .masonry {display:none;}
+    .slidebox,
+    .slidebox img {display:none;}
+    article#education dl.alignright {float:none;}
+    article#education dl.fifty {width:100%;}
+    .drop-shadow {
+       -webkit-filter:rgba(255,255,255,1);
+     }  
+  
+}
