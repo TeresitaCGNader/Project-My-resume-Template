@@ -10,7 +10,7 @@
       <?php /*Variable*/
           $sitename="R&eacute;sum&eacute;";
           $slogan="Student of Computer Science";
-          $sitepath="http://people.oregonstate.edu/~guzmannt/about/";
+          $sitepath="write here your website url";
           $author="Teresita C. G. Nader";
       ?>
   
@@ -172,12 +172,12 @@
     <article id="service" class="blue-bg boxshadow">
       <h2><i class="material-icons md-24 move">favorite</i>Service to the Community</h2>
       <dl>
-        <dt><a href="https://www.savinggrace.info/" target="_blank">Saving Grace Pet Adoption Center</a></dt>
+        <dt><a href="url here" target="_blank">community service association here</a></dt>
           <dd>Volunteer</dd>
       </dl>
   <figure class="blue-bg radius boxshadow">
-    <iframe src="https://www.youtube.com/embed/_q8thkMAB5Q"></iframe>
-    <figcaption>Teresita clicker training her cat to hi5. &copy; Teresita C. G. Nader 2017*. 0:08; MP4**.</figcaption>
+    <iframe src="a YouTube video url"></iframe>
+    <figcaption>Teresita clicker training her cat to hi5(description of the video). &copy; Teresita C. G. Nader 2017*. 0:08; MP4**.</figcaption>
   </figure>
   </article>
     <article id="skills" class="red-bg boxshadow">
@@ -285,7 +285,7 @@
         $web = $_POST['web'];
         $message = $_POST['message'];
         $from = $_POST['firstlastname']; 
-        $to = 'guzmannt@oregonstate.edu'; 
+        $to = 'your email here'; 
         $subject = '[Resume;] inquiry';
         $human = $_POST['human'];
         /* extra credit */
